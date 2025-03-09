@@ -23,6 +23,10 @@ make -j
 sudo make install
 
 tippecanoe -o carte_fibre_immeubles_2024_t3.pmtiles carte_fibre_immeubles_2024_3_20241106.csv
+
+S3_BUCKET=$(echo $KUBERNETES_NAMESPACE | cut -d '-' -f 2)
+mc cp carte_fibre_immeubles_2024_t3.pmtiles s3/$S3_BUCKET/pmtiles/carte_fibre_immeubles_2024_t3.pmtiles
+mc anonymous set download s3/$S3_BUCKET/pmtiles/carte_fibre_immeubles_2024_t3.pmtiles
 ```
 
 
