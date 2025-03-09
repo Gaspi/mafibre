@@ -1,1 +1,43 @@
-# mafibre
+# MaFibre
+
+## Configuration
+TODO
+
+
+## Create tiles
+
+```sh
+cd data
+# Immeubles 2024T3
+wget https://www.data.gouv.fr/fr/datasets/r/4f213bb4-222b-4b27-8751-07cf99840fd8 immeubles_2024_t3.zip
+unzip immeubles_2024_t3.zip
+
+
+wget https://github.com/protomaps/go-pmtiles/releases/download/v1.25.3/go-pmtiles_1.25.3_Linux_x86_64.tar.gz
+tar -zxf go-pmtiles_1.25.3_Linux_x86_64.tar.gz
+
+sudo apt-get install libsqlite3-dev libz-dev
+git clone https://github.com/mapbox/tippecanoe.git
+cd tippecanoe
+make -j
+sudo make install
+
+tippecanoe -o carte_fibre_immeubles_2024_t3.pmtiles carte_fibre_immeubles_2024_3_20241106.csv
+```
+
+
+## Host on S3
+
+```sh
+TODO
+```
+
+
+## Compile and host frontend
+
+```sh
+npm install .
+```
+
+## Get started on SSPCloud
+- [Using VSCode and Python](https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=mafibre&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FGaspi%2Fmafibre%2Frefs%2Fheads%2Fmain%2Finit-scripts%2Fvscode-python.sh%C2%BB)
