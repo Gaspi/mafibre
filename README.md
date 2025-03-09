@@ -45,4 +45,4 @@ npm install .
 
 ## Get started on SSPCloud
 
-- [Using VSCode and Python](https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=mafibre&version=2.2.2&s3=region-ec97c721&resources.requests.cpu=%C2%AB2000m%C2%BB&resources.requests.memory=%C2%AB32Gi%C2%BB&persistence.size=%C2%AB50Gi%C2%BB&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FGaspi%2Fmafibre%2Frefs%2Fheads%2Fmain%2Finit-scripts%2Fvscode-python.sh%C2%BB&networking.user.enabled=true&networking.user.ports[0]=8080&discovery.hive=false&discovery.mlflow=false&discovery.metaflow=false)
+- [Using VSCode and Python](https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=mafibre&version=2.2.2&s3=region-ec97c721&resources.requests.cpu=«2000m»&resources.requests.memory=«32Gi»&persistence.size=«50Gi»&init.personalInit=«https%3A%2F%2Fraw.githubusercontent.com%2FGaspi%2Fmafibre%2Frefs%2Fheads%2Fmain%2Finit-scripts%2Fvscode-python.sh»&networking.user.enabled=true&networking.user.ports[1]=8081&networking.user.ports%5B0%5D=8080&discovery.hive=false&discovery.mlflow=false&discovery.metaflow=false&autoLaunch=true)
