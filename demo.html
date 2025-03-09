@@ -37,38 +37,19 @@
             style: {
                 version: 8,
                 sources: {
-                    'example_source': {
+                    'arcep': {
                         type: 'vector',
-                        url: `pmtiles://${PMTILES_URL}`,
-                        attribution: '© <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>'
+                        url: `pmtiles://${PMTILES_URL}`
                     }
                 },
                 layers: [
                     {
-                        'id': 'buildings',
-                        'source': 'example_source',
-                        'source-layer': 'landuse',
-                        'type': 'fill',
+                        'id': 'fibre',
+                        'source': 'arcep',
+                        'source-layer': 'fibre',
+                        'type': 'point',
                         'paint': {
                             'fill-color': 'steelblue'
-                        }
-                    },
-                    {
-                        'id': 'roads',
-                        'source': 'example_source',
-                        'source-layer': 'roads',
-                        'type': 'line',
-                        'paint': {
-                            'line-color': 'black'
-                        }
-                    },
-                    {
-                        'id': 'mask',
-                        'source': 'example_source',
-                        'source-layer': 'mask',
-                        'type': 'fill',
-                        'paint': {
-                            'fill-color': 'white'
                         }
                     }
                 ]
